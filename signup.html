@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <h1 id="main-heading">Create A New Account</h1>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+    <form onsubmit="return formValidation()">
+
+        <label for="fullName">Full Name</label><br>
+        <input id="fullName" type="text" name="full_name" placeholder="Type here"><br>
+        <p> <span id="invalidName" style="color: red;"></span> </p>
+
+        <label for="emailInput">Email</label><br>
+        <input id="emailInput" type="email"  name="email" placeholder="Type here"><br>
+        <p> <span id="invalidEmail" style="color: red;"></span> </p>
+
+        <label for="passwordInput">Create Password</label><br>
+        <input id="passwordInput" type="password"  name="password" placeholder="Type here"><br><br>
+        <p> <span id="invalidPassword" style="color: red;"></span> </p>
+
+        <button type="submit">Create Account</button><br>
+    </form>
+    <script src='signup.js'></script>
+</body>
+</html>
